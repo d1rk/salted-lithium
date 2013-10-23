@@ -1,0 +1,26 @@
+master: localhost
+file_client: local
+cache_jobs: True
+backup_mode: minion
+
+log_level: warning
+
+log_level_logfile: debug
+log_file: /var/log/salt/minion
+
+state_verbose: True
+state_output: full
+
+states_dirs:
+  - /vagrant/salt/salt
+  - /srv/salt
+
+pillar_roots:
+  base:
+    - /vagrant/salt/pillar
+    - /srv/pillar
+
+file_roots:
+  base:
+    - /vagrant/salt/salt
+    - /srv/salt
