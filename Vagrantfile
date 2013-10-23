@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
     salt.minion_config = 'salt/minion'
     salt.bootstrap_script = 'salt/vendor/bootstrap.sh'
     salt.run_highstate = true
-    salt.verbose = true
+    # salt.verbose = true
 
   end
 end
