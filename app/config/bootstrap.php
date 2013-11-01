@@ -32,6 +32,13 @@
 require __DIR__ . '/bootstrap/libraries.php';
 
 /**
+ * The logging file contains the configuration and startup of the logging-engine, provided by
+ * lithium. It is setup in a way to generate log-files at a writable folder at
+ * `app/resources/tmp/logs` and will generate a new file for each severity that occurs.
+ */
+require __DIR__ . '/bootstrap/logging.php';
+
+/**
  * The error configuration allows you to use the filter system along with the advanced matching
  * rules of the `ErrorHandler` class to provide a high level of control over managing exceptions in
  * your application, with no impact on framework or application code.
